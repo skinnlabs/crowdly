@@ -1,0 +1,46 @@
+{
+  "background_color": "#ffffff",
+  "description": "The Notebook Project is a social benefit corporation built around a fully interactive platform featuring a growing database of career-related topics, financial literacy programs, free webinars, curated audiobooks, and top-rated online courses. This platform is essentially powered by a network of instructors, mentors, authors, content creators and publishers. Local businesses and volunteers are invited to participate or sponsor a reading group to make this initiative as impactful as possible...",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "The Notebook Project",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Notebook",
+    "icons": [{
+    "src": "icon/lowres.webp",
+    "sizes": "64x64",
+    "type": "image/png"
+  }, {
+    "src": "https://imglink.io/ib/otpJMo2SXJ.png",
+    "sizes": "64x64"
+  }, {
+    "src": "https://imglink.io/ib/otpJMo2SXJ.png",
+    "sizes": "128x128"
+  }, {
+    "src": "https://imglink.io/ib/otpJMo2SXJ.png",
+    "sizes": "512x512"
+  }],
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [],
+  "screenshots": [
+    {
+      "src": "{
+    "src": "https://imglink.io/ib/otpJMo2SXJ.png",
+    "sizes": "64x64"
+  }, ",
+      "sizes": "1280x800",
+      "type": "image/png"
+    },
+    {
+      "src": "{
+    "src": "https://imglink.io/ib/otpJMo2SXJ.png",
+    "sizes": "64x64"
+  }, ",
+      "sizes": "750x1334",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": []
+}
