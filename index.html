@@ -1014,43 +1014,47 @@
 // - Have avatar image in story keep scale and animate towards avatar on feed page when closing.
 // - Add loaders.
 
-
 // Data
 let storiesData = [
-{
-  user: 'lokesh',
-  time: '5min',
-  video: 'citylife' },
-{
-  user: 'vegangumshoe',
-  time: '12m',
-  video: 'girlbythesea' },
-{
-  user: 'thedogindie',
-  time: '3hr',
-  video: 'diving' },
-{
-  user: 'juanarreguin',
-  time: '5hr',
-  video: 'photoshop' },
-{
-  user: 'nspady',
-  time: '12hr',
-  video: 'statefair' }];
-
-
+  {
+    user: "lokesh",
+    time: "5min",
+    video: "citylife"
+  },
+  {
+    user: "vegangumshoe",
+    time: "12m",
+    video: "girlbythesea"
+  },
+  {
+    user: "thedogindie",
+    time: "3hr",
+    video: "diving"
+  },
+  {
+    user: "juanarreguin",
+    time: "5hr",
+    video: "photoshop"
+  },
+  {
+    user: "nspady",
+    time: "12hr",
+    video: "statefair"
+  }
+];
 
 const isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 
 // Templates
-const storyBarAvatarTemplate = _.template($('#story-bar-avatar-template').html());
-const storyTemplate = _.template($('#story-template').html());
+const storyBarAvatarTemplate = _.template(
+  $("#story-bar-avatar-template").html()
+);
+const storyTemplate = _.template($("#story-template").html());
 
 // Elements
-let $feedCover = $('.feed__cover');
-let $storyBar = $('.story-bar');
-let $storyBarUsers = $('.story-bar__user');
-
+let $feedCover = $(".feed__cover");
+let $storyBar = $(".story-bar");
+let $storyBarUsers = $(".story-bar__user");
 
 // Classes
 class StoryBar {
@@ -1064,13 +1068,12 @@ class StoryBar {
     let fragment = document.createDocumentFragment();
 
     _.each(this.data, (story, index) => {
-      story = Object.assign(story, { 'index': index });
-      $(storyBarAvatarTemplate(story)).
-      appendTo(fragment);
+      story = Object.assign(story, { index: index });
+      $(storyBarAvatarTemplate(story)).appendTo(fragment);
     });
     this.$el.append(fragment);
-  }}
-
+  }
+}
 
 class Stories {
   constructor(el, data) {
@@ -1099,9 +1102,9 @@ class Stories {
 
     _.each(this.stories, (story, index) => {
       story = Object.assign(story, {
-        'index': index,
-        'isIOS': isIOS });
-
+        index: index,
+        isIOS: isIOS
+      });
       $(storyTemplate(story)).appendTo(fragment);
     });
 
@@ -1112,52 +1115,52 @@ class Stories {
   }
 
   /*
-  	Make story and its neighbors visible, hide the rest.
-   */
+		Make story and its neighbors visible, hide the rest.
+	 */
   show(index) {
     // Update index which tracks currently shown story
     this.index = index;
 
     // Reset Stories transforms (container)
-    this.$el.css('transform', 'translateZ(-50vw)');
+    this.$el.css("transform", "translateZ(-50vw)");
     this.rotateY = 0;
 
     // Hide all stories
-    this.$el.find('.story').hide();
+    this.$el.find(".story").hide();
 
     // Show and position the chosen story as well as its neighbors
     for (let i = -1; i < 2; i++) {
       let loopIndex = i + index;
       let coverOpacity = Math.abs(i);
 
-      this.$el.
-      find('#story-' + loopIndex).
-      find('.story__cover').
-      css({
-        'will-change': 'opacity',
-        'opacity': coverOpacity }).
-
-      end().
-      css({
-        'will-change': 'transform',
-        'transform': `rotateY(${i * 90}deg) translateZ(50vw)` }).
-
-      show();
+      this.$el
+        .find("#story-" + loopIndex)
+        .find(".story__cover")
+        .css({
+          "will-change": "opacity",
+          opacity: coverOpacity
+        })
+        .end()
+        .css({
+          "will-change": "transform",
+          transform: `rotateY(${i * 90}deg) translateZ(50vw)`
+        })
+        .show();
     }
   }
 
   open() {
-    console.log('open');
+    console.log("open");
   }
 
   close() {
-    let $story = this.$el.find('#story-' + this.index);
+    let $story = this.$el.find("#story-" + this.index);
 
     this._removeEventHandlers();
     this.pauseVideos();
 
     // Hide all stories but the current
-    this.$el.find('.story').hide();
+    this.$el.find(".story").hide();
     $story.show();
 
     //
@@ -1165,38 +1168,42 @@ class Stories {
     let storyBarUserRect = $storyBarUser[0].getBoundingClientRect();
 
     // Reset 3d transforms and scale down.
-    $story.attr('style', '');
-    this.$el.attr('style', `transform-origin: ${storyBarUserRect.left + 12}px ${storyBarUserRect.top + 24}px; transform: translateZ(0) scale(0.1)`);
-    this.$el.addClass('is-closed');
-    $storyBarUser.addClass('bounce');
+    $story.attr("style", "");
+    this.$el.attr(
+      "style",
+      `transform-origin: ${storyBarUserRect.left + 12}px ${
+        storyBarUserRect.top + 24
+      }px; transform: translateZ(0) scale(0.1)`
+    );
+    this.$el.addClass("is-closed");
+    $storyBarUser.addClass("bounce");
 
     // Fade in feed page
-    $feedCover.
-    attr('style', '').
-    addClass('is-hidden');
-
+    $feedCover.attr("style", "").addClass("is-hidden");
   }
 
   pauseVideos() {
-    this.$el.find('.story__video').each(function () {
+    this.$el.find(".story__video").each(function () {
       this.pause();
     });
   }
 
   _addEventHandlers() {
-    $(document).
-    on('utap.stories', this._onTap.bind(this)).
-    on('udragstart.stories', this._onDragStart.bind(this)).
-    on('udragmove.stories', this._onDragMove.bind(this)).
-    on('udragend.stories', this._onDragEnd.bind(this));
+    $(document)
+      .on("utap.stories", this._onTap.bind(this))
+      .on("udragstart.stories", this._onDragStart.bind(this))
+      .on("udragmove.stories", this._onDragMove.bind(this))
+      .on("udragend.stories", this._onDragEnd.bind(this));
   }
 
   _removeEventHandlers() {
-    $(document).off('.stories');
+    $(document).off(".stories");
   }
 
   _onTap(e) {
-    if (this.isRotating) {return;}
+    if (this.isRotating) {
+      return;
+    }
     this.isRotating = true;
 
     // // Clicking the left 33% of the image takes you back, the rest forwards.
@@ -1207,7 +1214,7 @@ class Stories {
         this.close();
       } else {
         this.targetRotateY = 90;
-        this.targetDirection = 'back';
+        this.targetDirection = "back";
       }
     } else {
       if (this.index + 1 === this.count) {
@@ -1215,7 +1222,7 @@ class Stories {
         this.close();
       } else {
         this.targetRotateY = -90;
-        this.targetDirection = 'forward';
+        this.targetDirection = "forward";
       }
     }
 
@@ -1225,7 +1232,7 @@ class Stories {
   _onDragStart(e) {
     this.targetDirection = null;
     this.isDragging = true;
-    this.el.style.willChange = 'transform';
+    this.el.style.willChange = "transform";
 
     this.dragStartX = e.px_start_x;
     this.dragCurrentX = this.dragStartX;
@@ -1257,23 +1264,29 @@ class Stories {
     // 2.
     let velocity = e.px_tdelta_x / e.ms_elapsed;
 
-    if (dragDeltaX > threshold || velocity < -1 * this.minVelocityToTransition) {
+    if (
+      dragDeltaX > threshold ||
+      velocity < -1 * this.minVelocityToTransition
+    ) {
       // If going back from first card, close
       if (this.index === 0) {
         this.isOpeningOrClosing = true;
         this.close();
       } else {
         this.targetRotateY = 90;
-        this.targetDirection = 'back';
+        this.targetDirection = "back";
         this.isRotating = true;
       }
-    } else if (Math.abs(dragDeltaX) > threshold || velocity > this.minVelocityToTransition) {
+    } else if (
+      Math.abs(dragDeltaX) > threshold ||
+      velocity > this.minVelocityToTransition
+    ) {
       if (this.index + 1 === this.count) {
         this.isOpeningOrClosing = true;
         this.close();
       } else {
         this.targetRotateY = -90;
-        this.targetDirection = 'forward';
+        this.targetDirection = "forward";
         this.isRotating = true;
       }
     } else {
@@ -1285,7 +1298,9 @@ class Stories {
   update() {
     // Update calls itself at the end and loop. We break the loop once dragging and animations
     // are both complete or we are opening/closing.
-    if (this.isOpeningOrClosing || !this.isDragging && !this.isRotating) {return;}
+    if (this.isOpeningOrClosing || (!this.isDragging && !this.isRotating)) {
+      return;
+    }
 
     let setCSSAfterUpdating = this.isDragging || this.isRotating;
 
@@ -1294,24 +1309,27 @@ class Stories {
 
       // If on first card and dragging back OR
       // If on last card and draggin forward, add resistance.
-      if (this.index === 0 && dragDeltaX > 0 ||
-      this.index + 1 === this.count && dragDeltaX < 0) {
-        this.rotateY = dragDeltaX / window.innerWidth * 30;
+      if (
+        (this.index === 0 && dragDeltaX > 0) ||
+        (this.index + 1 === this.count && dragDeltaX < 0)
+      ) {
+        this.rotateY = (dragDeltaX / window.innerWidth) * 30;
         let opacity = (90 - Math.abs(this.rotateY)) / 90;
-        $feedCover.css('opacity', opacity);
+        $feedCover.css("opacity", opacity);
       } else {
-        this.rotateY = dragDeltaX / window.innerWidth * 90;
+        this.rotateY = (dragDeltaX / window.innerWidth) * 90;
       }
     }
 
     if (this.isRotating) {
       // Simple easing
-      this.rotateY += (this.targetRotateY - this.rotateY) / this.transitionSpeed;
+      this.rotateY +=
+        (this.targetRotateY - this.rotateY) / this.transitionSpeed;
 
       // If story has nearly reached its target, bump it to final spot and stop animating.
       if (Math.abs(this.rotateY - this.targetRotateY) < 0.5) {
         this.rotateY = this.targetRotateY;
-        this.el.style.willChange = 'initial';
+        this.el.style.willChange = "initial";
         this.isRotating = false;
 
         if (this.targetDirection) {
@@ -1321,7 +1339,10 @@ class Stories {
     }
 
     if (setCSSAfterUpdating) {
-      this.$el.css('transform', `translateZ(-50vw) rotateY(${this.rotateY}deg)`);
+      this.$el.css(
+        "transform",
+        `translateZ(-50vw) rotateY(${this.rotateY}deg)`
+      );
 
       // Freater rotateY, more opacity for prev.
       // Smaller rotate, more opacity for next.
@@ -1329,14 +1350,15 @@ class Stories {
       let prevIndex = this.index - 1;
       let nextIndex = this.index + 1;
 
-      this.$el.
-      find('#story-' + prevIndex + ' .story__cover').
-      add('#story-' + nextIndex + ' .story__cover').
-      css('opacity', opacity);
+      this.$el
+        .find("#story-" + prevIndex + " .story__cover")
+        .add("#story-" + nextIndex + " .story__cover")
+        .css("opacity", opacity);
     }
 
     if (this.isSwitchingStories) {
-      let newIndex = this.targetDirection === 'forward' ? this.index + 1 : this.index - 1;
+      let newIndex =
+        this.targetDirection === "forward" ? this.index + 1 : this.index - 1;
       this.show(newIndex);
       this.isSwitchingStories = false;
     }
@@ -1347,10 +1369,8 @@ class Stories {
     this._removeEventHandlers();
     this.el.remove();
     delete this;
-  }}
-
-
-
+  }
+}
 
 // ------------
 // Init
@@ -1363,24 +1383,26 @@ class Stories {
 
 let thumbsUpShown = false;
 if (window.innerWidth >= 1000) {
-  $(window).on('resize.stories', function () {
+  $(window).on("resize.stories", function () {
     if (window.innerWidth <= 420) {
-      $('.success-message').addClass('is-in');
-      $(window).off('resize.stories');
+      $(".success-message").addClass("is-in");
+      $(window).off("resize.stories");
     }
   });
 }
 
-let storyBar = new StoryBar(document.querySelector('.story-bar'), storiesData);
+let storyBar = new StoryBar(document.querySelector(".story-bar"), storiesData);
 storyBar.render();
 
-let stories = new Stories(document.querySelector('.stories'), storiesData);
+let stories = new Stories(document.querySelector(".stories"), storiesData);
 stories.render();
 stories.show(0);
 
 if (isIOS) {
-  $('body').addClass('ios');
+  $("body").addClass("ios");
 }
+
+
 	
 	    </script>
 	    
