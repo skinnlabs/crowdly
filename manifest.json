@@ -1,16 +1,13 @@
 {
   "background_color": "#ffffff",
   "description": "A powerful platform-enabled service designed to provide young people with personal, professional, and tech-oriented skills, experience and resources for success in today’s marketplace.",
-  "dir": "ltr",
   "display": "standalone",
   "name": "The Notebook Project",
   "orientation": "any",
   "scope": "/",
   "short_name": "The Notebook Project",
-  "start_url": "https://za.notebook.africa",
+  "start_url": "https://notebook.africa",
   "theme_color": "#ffffff",
-  "categories": [],
-  "screenshots": [],
   "icons": [
     {
       "src": "https://cdn.shopify.com/s/files/1/0064/4448/2650/files/Notebook_Logo.png",
@@ -37,6 +34,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "shortcuts": []
+  ]
 }
