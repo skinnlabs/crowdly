@@ -33,11 +33,21 @@ data-wf-page="602ebdfe88e4cb515b29a0dc" data-wf-site=
   "//cdn.shopify.com/s/files/1/0064/4448/2650/t/10/assets/styles.css?v=9029652474740130923"
   rel="stylesheet" type="text/css" media="all">
  
+<!--PWABUILDER SCRIPTS-->
  <script type="module">
    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
    const el = document.createElement('pwa-update');
    document.body.appendChild(el);
 </script>
+
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
+></script>
+
+
+
+<!--END OF PWABUILDER SCRIPTS-->
 
 <script src=
   "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
@@ -501,6 +511,12 @@ data-wf-page="602ebdfe88e4cb515b29a0dc" data-wf-site=
   </script>
 </head>
 <body class="bg-secondary">
+
+<pwa-install id="installComponent"></pwa-install>
+  <script async defer>
+    const ref = document.getElementById("installComponent");
+    ref.getInstalledStatus();
+  </script>
 
 
   <div data-ms-content="members" class="link-template-menu">
