@@ -30,8 +30,11 @@ data-wf-page="602ebdfe88e4cb515b29a0dc" data-wf-site=
   <link rel="manifest" href=
   "/manifest.json">
   <link href=
-  "//cdn.shopify.com/s/files/1/0064/4448/2650/t/10/assets/styles.css?v=9029652474740130923"
+  "//cdn.shopify.com/s/files/1/0064/4448/2650/t/10/assets/styles.css"
   rel="stylesheet" type="text/css" media="all">
+
+<link href="/modal.css" type="text/css">
+
  
 <!--PWABUILDER SCRIPTS-->
  <script type="module">
@@ -649,9 +652,23 @@ data-wf-page="602ebdfe88e4cb515b29a0dc" data-wf-site=
                 </div>
               </div>
               <div class="flex-row">
-                <div class="button button-small margin-right-20">
+                <div class="box"><a href="#popup1" class="button button-small margin-right-20">
                   Listen Now
-                </div>
+                </a></div>
+
+<!--MODAL ONE-->
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>PREVIEW</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			INSERT AUDIO PLAYER HERE
+		</div>
+	</div>
+</div>
+
+<!--END MODAL ONE-->
+
                 <div class="text-small">
                   by Russ
                 </div>
