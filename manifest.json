@@ -6,7 +6,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "The Notebook Project",
-  "start_url": "https://notebook.africa",
+  "start_url": "https://notebook.africa/",
   "theme_color": "#ffffff",
   "icons": [
     {
