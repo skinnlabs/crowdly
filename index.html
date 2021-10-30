@@ -512,7 +512,6 @@ data-wf-page="602ebdfe88e4cb515b29a0dc" data-wf-site=
 </head>
 <body class="bg-secondary">
 
-<pwa-install data-ms-content="members" style="background-color:black!important; color: white!important;" id="installComponent" class="button w-button"></pwa-install>
   <script async defer>
     const ref = document.getElementById("installComponent");
     ref.getInstalledStatus();
@@ -529,11 +528,14 @@ data-wf-page="602ebdfe88e4cb515b29a0dc" data-wf-site=
     "/bookshelf" target="_blank" class=
     "link-template-button">Browse</a><a href=
     "/notions" target="_blank" class=
-    "link-template-button">Notions</a> <a href="#" class=
+    "link-template-button">Notions</a> 
+
+
+<pwa-install id="installComponent" data-ms-content="members" href="#" class=
     "link-template-icon-button next w-inline-block"><img src=
-    "https://cdn.shopify.com/s/files/1/0252/6550/4319/files/filter.svg"
-    loading="lazy" alt="Filter Icon" class=
-    "link-template-arrow"></a>
+    "/download.svg"
+    loading="lazy" alt="Download Icon" class=
+    "link-template-arrow"></pwa-install>
   </div>
 
 <!-- BEGIN content_for_index -->
