@@ -193,6 +193,8 @@
             <li>Thing one</li>
             <li>Thing two</li>
           </ol>
+
+
           <figure class=
           "w-richtext-align-fullwidth w-richtext-figure-type-image">
             <div><img src=
@@ -203,6 +205,9 @@
               A caption to your photo
             </figcaption>
           </figure>
+
+
+
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
           dolore magna aliqua.</p>
