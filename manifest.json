@@ -1,66 +1,51 @@
 {
   "background_color": "#ffffff",
-  "description": "A powerful platform-enabled service designed to provide young people with personal, professional, and tech-oriented skills, experience and resources for success in today’s marketplace.",
+  "description": "A powerful platform-enabled service designed to provide young people with personal life and professional, and tech-oriented skills, experience and resources for...",
+  "dir": "ltr",
   "display": "standalone",
   "name": "The Notebook Project",
-  "lang": "en",
   "orientation": "any",
   "scope": "/",
   "short_name": "The Notebook Project",
   "start_url": "https://notebook.africa/",
   "theme_color": "#ffffff",
+  "categories": [],
+  "screenshots": [
+    {
+      "src": "/images/screenshot-1.png",
+      "sizes": "1280x800",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/screenshot-2.png",
+      "sizes": "750x1334",
+      "type": "image/png"
+    }
+  ],
   "icons": [
     {
       "src": "https://cdn.shopify.com/s/files/1/0064/4448/2650/files/Notebook_Logo.png",
-      "type": "image/png",
-      "sizes": "32x32"
-    },
-    {
-      "src": "https://cdn.shopify.com/s/files/1/0064/4448/2650/files/Notebook_Logo.png",
-      "type": "image/png",
-      "sizes": "64x64"
-    },
-    {
-      "src": "https://cdn.shopify.com/s/files/1/0064/4448/2650/files/Notebook_Logo.png",
-      "type": "image/png",
-      "sizes": "128x128"
-    },
-    {
-      "src": "https://cdn.shopify.com/s/files/1/0064/4448/2650/files/Notebook_Logo.png",
-      "type": "image/png",
-      "sizes": "256x256"
-    },
-    {
-      "src": "https://cdn.shopify.com/s/files/1/0064/4448/2650/files/Notebook_Logo.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "type": "image/x-icon"
     }
-  ]
-}
-
+  ],
+  "shortcuts": [
+{
+"name": "Books",
+"description": "Check out the latest book recommendations.",
+"src": "/library"
+},
 
 {
-  "shortcuts": [
-    {
-      "name": "Books",
-      "description": "View the list of books curated for you",
-      "url": "/library",
-      "icons": [
-        {
-          "src": "/book-open.svg",
-          "type": "image/svg"
-        }
-      ]
-    },
-    {
-      "name": "Courses",
-      "description": "View the list of courses available",
-      "url": "/courses"
-    },
- {
-      "name": "Tutorials",
-      "description": "View the list of tutorials available",
-      "url": "/resources"
-    }
-  ]
+"name": "Courses",
+"description": "Check out the latest book recommendations.",
+"src": "/courses"
+},
+
+{
+"name": "Tutorials",
+"description": "Check out the latest book recommendations.",
+"src": "/resources"
+}
+
+]
 }
