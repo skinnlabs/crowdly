@@ -36,3 +36,30 @@
     }
   ]
 }
+
+{
+  "shortcuts": [
+    {
+      "name": "Books",
+      "description": "View the list of books curated for you",
+      "url": "/library",
+      "icons": [
+        {
+          "src": "/book-open.svg",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Courses",
+      "description": "View the list of courses available",
+      "url": "/courses"
+    },
+
+  {
+      "name": "Tutorials",
+      "description": "View the list of tutorials available",
+      "url": "/resources"
+    }
+  ]
+}
