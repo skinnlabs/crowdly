@@ -12,12 +12,12 @@
   "categories": ["books", "education"],
   "screenshots": [
     {
-      "src": "/screenshot_1.png",
+      "src": "https://notebook.africa/screenshot_1.png",
       "sizes": "1280x800",
       "type": "image/png"
     },
     {
-      "src": "/screenshot_2.png",
+      "src": "https://notebook.africa/screenshot_2.png",
       "sizes": "750x1334",
       "type": "image/png"
     }
