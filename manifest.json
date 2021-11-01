@@ -9,7 +9,7 @@
   "short_name": "The Notebook Project",
   "start_url": "https://notebook.africa/",
   "theme_color": "#ffffff",
-  "categories": [],
+  "categories": ["books", "education"],
   "screenshots": [
     {
       "src": "/screenshot_1.png",
