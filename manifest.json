@@ -4,8 +4,6 @@
   "display": "standalone",
   "name": "The Notebook Project",
   "lang": "en",
-  "dir": "let",
-   "id": "notebookafrica",
   "orientation": "any",
   "scope": "/",
   "short_name": "The Notebook Project",
@@ -40,6 +38,7 @@
   ]
 }
 
+
 {
   "shortcuts": [
     {
@@ -58,8 +57,7 @@
       "description": "View the list of courses available",
       "url": "/courses"
     },
-
-  {
+ {
       "name": "Tutorials",
       "description": "View the list of tutorials available",
       "url": "/resources"
