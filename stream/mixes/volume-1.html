@@ -74,7 +74,7 @@
   <meta name="viewport" content=
   "width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="canonical" href="https://skybox.life/">
+  <link rel="canonical" href="https://notebook.africa/">
   <script type="text/javascript">
       WebFont.load({
         google: {
@@ -88,7 +88,7 @@
   <link href=
   "//cdn.shopify.com/s/files/1/0090/0887/3587/t/2/assets/player.css?v=3747348057095621845"
   rel="stylesheet" type="text/css" media="all">
-  <title>Volume 1: The Silver Lining | SKYBOX®</title>
+  <title>Volume 1: The Silver Lining | The Notebook Project</title>
   <link href=
   "https://cdn.shopify.com/s/files/1/0090/0887/3587/files/SKYBOX_PWA.png"
   rel="shortcut icon" type="image/png">
@@ -98,9 +98,8 @@
   <script data-ad-client="ca-pub-5710858543203237" async src=
   "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <meta property="og:image" content=
-  "https://cdn.shopify.com/s/files/1/0090/0887/3587/files/Phone_Wallpaper_Mockup_Instagram_Story_Design.png?v=1618892682">
-  <meta property="og:image:secure_url" content=
-  "https://cdn.shopify.com/s/files/1/0090/0887/3587/files/Phone_Wallpaper_Mockup_Instagram_Story_Design.png?v=1618892682">
+  "https://notebook.africa/screenshot_1.png">
+ 
   <meta property="og:image:width" content="1080">
   <meta property="og:image:height" content="1920">
   <link href="https://monorail-edge.shopifysvc.com" rel=
@@ -429,6 +428,8 @@
   })();
   </script>
 </head>
+
+
 <body>
   <div class="wrapper" id="app">
     <div class="player">
@@ -481,9 +482,12 @@
         <div class="progress__time"></div>
       </div>
       <div v-cloak=""></div>
-    </div><a href="https://download.skybox.life" target="_blank"
-    class="github-btn">GET FULL VERSION</a>
+    </div><a href="/get-premium"
+    class="github-btn">GET THE FULL VERSION</a>
   </div>
+
+
+<!--HYVOR TALK COMMENTS PLUGIN
   <div id="hyvor-talk-view"></div>
   <script type="text/javascript">
     var HYVOR_TALK_WEBSITE = 3147; // DO NOT CHANGE THIS
@@ -493,7 +497,10 @@
     };
   </script> 
   <script async type="text/javascript" src=
-  "//talk.hyvor.com/web-api/embed"></script> <svg xmlns=
+  "//talk.hyvor.com/web-api/embed"></script> 
+-->
+
+<svg xmlns=
   "http://www.w3.org/2000/svg" hidden="" xmlns:xlink=
   "http://www.w3.org/1999/xlink">
   <defs>
@@ -596,25 +603,25 @@
   el: "#app",
   data() {
     return {
-      audio: null,
-      circleLeft: null,
-      barWidth: null,
-      duration: null,
-      currentTime: null,
-      isTimerPlaying: false,
+      audio: 1,
+      circleLeft: 0,
+      barWidth: 0,
+      duration: 300,
+      currentTime: 300,
+      isTimerPlaying: true,
       tracks: [
         {
-          name: "VOLUME ONE",
+          name: "Volume I",
           artist: "The Silver Lining",
           cover: "https://cdn.shopify.com/s/files/1/0090/0887/3587/files/5.png",
           source: "https://cdn.shopify.com/s/files/1/0090/0887/3587/files/VOLUME-1-PART-1.MP3",
-          url: "https://skybox.life/",
+          url: "https://notebook.africa/stream/mixes/volume-1",
           favorited: false
         }
       ],
-      currentTrack: null,
-      currentTrackIndex: 0,
-      transitionName: null
+      currentTrack: 1,
+      currentTrackIndex: 1,
+      transitionName: scale-out
     };
   },
   methods: {
@@ -673,7 +680,7 @@
     },
     prevTrack() {
       this.transitionName = "scale-in";
-      this.isShowCover = false;
+      this.isShowCover = true;
       if (this.currentTrackIndex > 0) {
         this.currentTrackIndex--;
       } else {
@@ -714,7 +721,7 @@
   },
   created() {
     let vm = this;
-    this.currentTrack = this.tracks[0];
+    this.currentTrack = this.tracks[1];
     this.audio = new Audio();
     this.audio.src = this.currentTrack.source;
     this.audio.ontimeupdate = function() {
