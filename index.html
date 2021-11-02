@@ -33,9 +33,29 @@ data-wf-page="602ebdfe88e4cb515b29a0dc" data-wf-site=
   "//cdn.shopify.com/s/files/1/0064/4448/2650/t/10/assets/styles.css"
   rel="stylesheet" type="text/css" media="all">
 
+
 <link rel="stylesheet" href="https://unpkg.com/onsenui@2.9.2/css/onsenui-core.min.css">
 <link rel="stylesheet" href="https://unpkg.com/onsenui@2.9.2/css/onsen-css-components.min.css">
 <script src="https://unpkg.com/onsenui@2.9.2/js/onsenui.min.js"></script>
+
+
+<script type="text/javascript">
+
+caches.open('myonsenuiapp').then(cache => {
+  return cache.addAll([
+    '/',
+    '/index.html',
+     '/courses.html',
+     '/resources.html',
+      '/library.html',
+     '/streams.html',
+    'https://unpkg.com/onsenui@2.9.2/css/onsenui-core.min.css',
+    'https://unpkg.com/onsenui@2.9.2/css/onsen-css-components.min.css',
+    'https://unpkg.com/onsenui@2.9.2/js/onsenui.min.js',
+    '/manifest.json'
+    
+  ]);
+})
 
 
 <!--PWABUILDER SCRIPTS-->
