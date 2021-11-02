@@ -427,6 +427,11 @@
     
   })();
   </script>
+
+<script src=
+  "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script> 
+  <script>
+
 </head>
 
 
@@ -603,12 +608,12 @@
   el: "#app",
   data() {
     return {
-      audio: 1,
-      circleLeft: 0,
-      barWidth: 0,
-      duration: 300,
-      currentTime: 300,
-      isTimerPlaying: true,
+      audio: null,
+      circleLeft: null,
+      barWidth: null,
+      duration: null,
+      currentTime: null,
+      isTimerPlaying: false,
       tracks: [
         {
           name: "Volume I",
@@ -619,9 +624,9 @@
           favorited: false
         }
       ],
-      currentTrack: 1,
-      currentTrackIndex: 1,
-      transitionName: scale-out
+      currentTrack: 0,
+      currentTrackIndex: 0,
+      transitionName: null
     };
   },
   methods: {
@@ -721,7 +726,7 @@
   },
   created() {
     let vm = this;
-    this.currentTrack = this.tracks[1];
+    this.currentTrack = this.tracks[0];
     this.audio = new Audio();
     this.audio.src = this.currentTrack.source;
     this.audio.ontimeupdate = function() {
