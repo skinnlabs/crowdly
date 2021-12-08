@@ -6,23 +6,15 @@
 data-wf-status="1">
 <head>
   <meta charset="utf-8">
-  <title>Airdrop Next | Free Cryptocurrency Forever</title>
+  <title>MoonClub | Mzansi's Premier Crypto Hub</title>
   <meta content=
-  "Join Crypto Airdrop Easy and Fast, Be the part of Blockchain community and get rewarded, Billions of cryptocurrency is distributed in year 2018. We provide 100% legit Airdrops from all around the world."
+  "Join MoonClub today and be a part of the leading online crypto community in South Africa."
   name="description">
-  <meta content="Airdrop Next | Free Cryptocurrency Forever"
-  property="og:title">
-  <meta content=
-  "Join Crypto Airdrop Easy and Fast, Be the part of Blockchain community and get rewarded, Billions of cryptocurrency is distributed in year 2018. We provide 100% legit Airdrops from all around the world."
-  property="og:description">
+ 
   <meta content=
   "https://uploads-ssl.webflow.com/5ba7e424b828fc638b530a9b/5bbf9c0666d01c02f5150e0b_airdropnext%20featured%20image.jpeg"
   property="og:image">
-  <meta content="Airdrop Next | Free Cryptocurrency Forever"
-  property="twitter:title">
-  <meta content=
-  "Join Crypto Airdrop Easy and Fast, Be the part of Blockchain community and get rewarded, Billions of cryptocurrency is distributed in year 2018. We provide 100% legit Airdrops from all around the world."
-  property="twitter:description">
+ 
   <meta content=
   "https://uploads-ssl.webflow.com/5ba7e424b828fc638b530a9b/5bbf9c0666d01c02f5150e0b_airdropnext%20featured%20image.jpeg"
   property="twitter:image">
@@ -52,6 +44,15 @@ data-wf-status="1">
   <link href=
   "https://uploads-ssl.webflow.com/5ba7e424b828fc638b530a9b/5bbe68b950a1aa62b3805e2c_airdropnext%20logo.png"
   rel="apple-touch-icon">
+
+
+<style>
+.w-webflow-badge {
+display:none!important;
+visibility:hidden!important;
+}
+</style>
+
   <script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-127402683-1', 'auto');ga('send', 'pageview');
   </script>
@@ -82,13 +83,13 @@ data-wf-status="1">
             "(max-width: 767px) 26px, (max-width: 991px) 3vw, 26px"
             class="image-9"></a><a href="https://bountynext.com/"
             target="_blank" class=
-            "button-9 w-button">BountyNext</a>
+            "button-9 w-button">Business</a>
             <div class=
             "div-search w-hidden-medium w-hidden-small w-hidden-tiny">
               <form action="/search" class="search-2 w-form">
                 <input type="search" class="search-input-2 w-input"
                 autofocus="true" maxlength="256" name="query"
-                placeholder="Search Airdrops…" id="search-2"
+                placeholder="What are you looking for?" id="search-2"
                 required=""><input type="submit" value=" " class=
                 "search-button-2 w-button">
               </form>
@@ -245,6 +246,9 @@ data-wf-status="1">
       </div>
     </div>
   </div>
+
+
+
   <div class="wf-section">
     <div class=
     "div-block-73 w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny">
@@ -429,11 +433,11 @@ data-wf-status="1">
   <div class="section-15 wf-section">
     <div class="div-block-52">
       <div>
-        <h1 class="heading-list featured-airdrop">Top Featured</h1>
+        <h1 class="heading-list featured-airdrop">Exchanges</h1>
       </div>
       <div>
         <div class="text-block-18">
-          <a href="/airdrops" class="link-2">See More</a>
+          <a style="visibility:hidden!important;" href="/exchanges" class="link-2">See More</a>
         </div>
       </div>
     </div>
@@ -453,7 +457,7 @@ data-wf-status="1">
               src=
               "https://uploads-ssl.webflow.com/5ba8d21231e0097188d032e7/5c7bf9b436b7b563a486fca5_cointiger%20airdrop%20ico%20bounty.png"
               class="airdrop-logo">
-              <h1 class="airdrop-name">Sparkle CoinTiger</h1>
+              <h1 class="airdrop-name">Binance</h1>
               <div class="category featured-list">
                 Exchange
               </div>
@@ -478,7 +482,7 @@ data-wf-status="1">
               src=
               "https://uploads-ssl.webflow.com/5ba8d21231e0097188d032e7/5c780b32a53e63941a00a76c_infliv%20airdrop%20ico%20bounty.jpg"
               class="airdrop-logo">
-              <h1 class="airdrop-name">INFLIV by P2PB2B</h1>
+              <h1 class="airdrop-name">Coinbase</h1>
               <div class="category featured-list">
                 Exchange
               </div>
@@ -502,7 +506,7 @@ data-wf-status="1">
               <img width="80" height="80" alt="Blockport" src=
               "https://uploads-ssl.webflow.com/5ba8d21231e0097188d032e7/5c682c7664350b211a2853f0_blockport%20airdrop%20ico%20bounty.jpg"
               class="airdrop-logo">
-              <h1 class="airdrop-name">Blockport</h1>
+              <h1 class="airdrop-name">Luno</h1>
               <div class="category featured-list">
                 Exchange
               </div>
@@ -528,7 +532,7 @@ data-wf-status="1">
               sizes="80px" srcset=
               "https://uploads-ssl.webflow.com/5ba8d21231e0097188d032e7/5c55bebdb111cef64802e508_huddl%20airdrop%20ico%20bounty-p-500.jpeg 500w, https://uploads-ssl.webflow.com/5ba8d21231e0097188d032e7/5c55bebdb111cef64802e508_huddl%20airdrop%20ico%20bounty-p-800.jpeg 800w, https://uploads-ssl.webflow.com/5ba8d21231e0097188d032e7/5c55bebdb111cef64802e508_huddl%20airdrop%20ico%20bounty.jpg 960w"
               class="airdrop-logo">
-              <h1 class="airdrop-name">Huddl</h1>
+              <h1 class="airdrop-name">VALR</h1>
               <div class="category featured-list">
                 Investment
               </div>
@@ -553,7 +557,7 @@ data-wf-status="1">
               src=
               "https://uploads-ssl.webflow.com/5ba8d21231e0097188d032e7/5c546b42c3306e777f0fa98b_crowd%20for%20angels%20airdrop%20ico%20bouunty.jpg"
               class="airdrop-logo">
-              <h1 class="airdrop-name">Crowd for Angels</h1>
+              <h1 class="airdrop-name">AltCoinTrader</h1>
               <div class="category featured-list">
                 Investment
               </div>
@@ -577,7 +581,7 @@ data-wf-status="1">
               <img width="80" height="80" alt="TRON" src=
               "https://uploads-ssl.webflow.com/5ba8d21231e0097188d032e7/5c3ffbeb42565d8136188a9a_tron%20airdrop%20ico%20bounty.jpg"
               class="airdrop-logo">
-              <h1 class="airdrop-name">TRON</h1>
+              <h1 class="airdrop-name">Kucoin</h1>
               <div class="category featured-list">
                 Cryptocurrency
               </div>
@@ -599,8 +603,7 @@ data-wf-status="1">
   <div class="section-13 wf-section">
     <div class="div-block-52">
       <div>
-        <h1 class="heading-list popular-airdrop">Popular
-        Category</h1>
+        <h1 class="heading-list popular-airdrop">Airdrops</h1>
       </div>
       <div class="div-block-53">
         <div>
@@ -785,12 +788,11 @@ data-wf-status="1">
   <div class="section-13 wf-section">
     <div class="div-block-52">
       <div>
-        <h1 class="heading-list trending-airdrop">See What's
-        Trending</h1>
+        <h1 class="heading-list trending-airdrop">Trending</h1>
       </div>
       <div>
         <div class="text-block-18">
-          <a href="/airdrops" class="link-2">See More</a>
+          <a href="/trending" class="link-2">See More</a>
         </div>
       </div>
     </div>
@@ -808,16 +810,16 @@ data-wf-status="1">
               <img width="75" height="75" alt="DOS by BitMax " src=
               "https://uploads-ssl.webflow.com/5ba8d21231e0097188d032e7/5c99dd79c951e7f4383c8908_dos%20by%20botmax%20airdrop%20ico%20bounty.jpg"
               class="image-2">
-              <h3 class="airdrop-name vertical">DOS by BitMax</h3>
+              <h3 class="airdrop-name vertical">BetU Fantasy</h3>
               <div style="background-color:#6a69e1" class=
               "label vertical-label vertical-label-tablet">
-                Airdrop
+                Play to Earn
               </div>
               <div class="category vertical">
-                Exchange
+                Betting
               </div>
               <div class="airdrop-value vertical">
-                $5
+                Free
               </div>
               <div class="airdrop-rating vertical">
                 ★★★★
