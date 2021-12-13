@@ -6,14 +6,8 @@
 data-wf-status="1">
 <head>
   <meta charset="utf-8">
-  <title>Not Found</title>
-  <meta content=
-  "Airdrop - World of Free Cryptocurrency, If you're on this page maybe you got wrong link go back to home."
-  name="description">
-  <meta content="Not Found" property="og:title">
-  <meta content=
-  "Airdrop - World of Free Cryptocurrency, If you're on this page maybe you got wrong link go back to home."
-  property="og:description">
+  <title>You are about to be redirected...</title>
+ 
   <meta content=
   "https://uploads-ssl.webflow.com/5ba7e424b828fc638b530a9b/5bbf9c0666d01c02f5150e0b_airdropnext%20featured%20image.jpeg"
   property="og:image">
@@ -54,6 +48,19 @@ data-wf-status="1">
 
   <script async src=
   "https://instascaler.com/opentag.js?id=97103368"></script>
+
+<script>
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+
+
 </head>
 <body>
   <div class="utility-page-wrap">
@@ -61,11 +68,12 @@ data-wf-status="1">
       <img src=
       "https://uploads-ssl.webflow.com/static/page-not-found.211a85e40c.svg"
       alt="">
-      <h2>Page not found</h2>
+      <h2>One last thing...</h2>
       <div>
-        The page you are looking for doesn't exist or has been
-        moved.
-      </div><a href="/" class="button-13 w-button">Back to Home</a>
+        You are about to be redirected to the BetU website. Use our referral link below to get free BetU tokens when you sign up!
+<br/><br/><button onclick="copyToClipboard" class="button-13 w-button"><strong>iTxQFNUDVp8404</strong></button>
+      </div><br/>
+<br/><a href="https://betu.io" class="button-13 w-button">Proceed to website</a>
     </div>
   </div>
   <script src=
