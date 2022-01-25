@@ -7,7 +7,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "MoonClub",
-  "start_url": "https://moonclub.co.za/",
+  "start_url": "https://moonclub.co.za/start",
   "theme_color": "#ffffff",
   "categories": ["finance", "education"],
   "screenshots": [
