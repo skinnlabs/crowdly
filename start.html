@@ -63,36 +63,13 @@ border: 2px solid #000!important;
 box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.75);
 }
 
-.mobile-app-icon-bar {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  background: #fefefe;
-}
-
-.mobile-app-icon-bar button {
-  padding: 1.25rem;
-  cursor: pointer;
-}
-
-.mobile-app-icon-bar button svg,
-.mobile-app-icon-bar button i,
-.mobile-app-icon-bar button img {
-  font-size: 2rem;
-  max-height: 2rem;
-  max-width: 2rem;
-}
-
 .darkmode-layer, .darkmode-toggle {
   z-index: 500;
 }
 
+.airdrop-logo, .airdrop-rating, .button-4, .brand-2 {
+isolation: isolate;
+}
 </style>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -353,7 +330,7 @@ darkmode.showWidget();
 
   <div class="section-9 wf-section">
 
-<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="1,1027,1839,825,5426,2010,3408,52" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>
+<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div style="isolation: isolate;" id="coinmarketcap-widget-marquee" coins="1,1027,1839,825,5426,2010,3408,52" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>
 
 
 <!---STORISTA
