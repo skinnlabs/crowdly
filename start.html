@@ -63,6 +63,33 @@ border: 2px solid #000!important;
 box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.75);
 }
 
+.mobile-app-icon-bar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background: #fefefe;
+}
+
+.mobile-app-icon-bar button {
+  padding: 1.25rem;
+  cursor: pointer;
+}
+
+.mobile-app-icon-bar button svg,
+.mobile-app-icon-bar button i,
+.mobile-app-icon-bar button img {
+  font-size: 2rem;
+  max-height: 2rem;
+  max-width: 2rem;
+}
+
+
 </style>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -104,6 +131,9 @@ box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.75);
 
 </head>
 <body class="body-8">
+
+
+
   <div class="navsection wf-section">
     <div>
       <div data-collapse="all" data-animation="default"
@@ -267,7 +297,13 @@ box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.75);
     </div>
   </div>
 
-
+<div class="mobile-app-icon-bar">
+  <button><i class="fa fa-picture-o" aria-hidden="true"></i></button>
+  <button><i class="fa fa-map-marker" aria-hidden="true"></i></button>
+  <button><i class="fa fa-upload" aria-hidden="true"></i></button>
+  <button><i class="fa fa-list-ul" aria-hidden="true"></i></button>
+  <button><i class="fa fa-cog" aria-hidden="true"></i></button>
+</div>
 
   <div class="wf-section">
     <div class=
