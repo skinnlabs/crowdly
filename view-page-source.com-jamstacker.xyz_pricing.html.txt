@@ -6,7 +6,7 @@
 data-wf-status="1">
 <head>
   <meta charset="utf-8">
-  <title>Getting Started - Jamstacker</title>
+  <title>Crypto-Based Stokvel Account - MoonClub</title>
   <meta property="og:type" content="website">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name=
@@ -440,15 +440,10 @@ data-wf-status="1">
       <div class="container-medium-730px pricing">
         <h1 data-w-id="b1748724-96d7-d721-d6ea-64a0b05ed28c" style=
         "-webkit-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-        class="title pricing">Support our cause with a donation. As
-        a free (ad-supported) service, contributions help us
-        maintain the platform and improve its functionality over
-        time.</h1>
+        class="title pricing">Introducing the first and only crypto-based Stokvel account in South Africa</h1>
         <p data-w-id="142d8864-f454-ac49-85cb-26aa8ed596ee" style=
         "-webkit-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-        class="paragraph-large pricing">Lorem ipsum dolor sit amet
-        consectetur adipiscing elit urna velit amet tempor egestas
-        fringilla bibendum vel nisl sed.</p>
+        class="paragraph-large pricing"> MoonClub has partnered with world-class technology partners to introduce the first and only crypto-based Stokvel account designed to provide low to middle-income South Africans with a better way to invest and build wealth by pooling resources that earn higher yields than traditional Stokvel accounts offered by banks.</p>
       </div>
       <div class="container-default w-container">
         <div class="pricing-wrapper w-dyn-list">
@@ -466,8 +461,7 @@ data-wf-status="1">
               "%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
               alt="" class="image card-plan-icon"></div>
               <div class="card-plan-title-wrapper">
-                <h2 class="title h3-size card-plan">Freemium
-                (Ad-Supported)</h2>
+                <h2 class="title h3-size card-plan">Starter</h2>
                 <p class="paragraph card-plan-excerpt">Lorem ipsum
                 dolor sit amet dolor consectetur luil adipiscing
                 elit placerat</p>
@@ -478,7 +472,7 @@ data-wf-status="1">
                 <div data-wf-sku-bindings=
                 "%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                 class="card-plan-price">
-                  $ 5.00 USD
+                  250.00 ZAR
                 </div>
                 <div class="card-plan-price-text">
                   /monthly
@@ -569,7 +563,7 @@ data-wf-status="1">
               "%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
               alt="" class="image card-plan-icon"></div>
               <div class="card-plan-title-wrapper">
-                <h2 class="title h3-size card-plan">Premium</h2>
+                <h2 class="title h3-size card-plan">Standard</h2>
                 <p class="paragraph card-plan-excerpt">Lorem ipsum
                 dolor sit amet dolor consectetur luil adipiscing
                 elit placerat</p>
@@ -683,7 +677,7 @@ data-wf-status="1">
               "%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
               alt="" class="image card-plan-icon"></div>
               <div class="card-plan-title-wrapper">
-                <h2 class="title h3-size card-plan">Donor</h2>
+                <h2 class="title h3-size card-plan">Custom</h2>
                 <p class="paragraph card-plan-excerpt">Lorem ipsum
                 dolor sit amet dolor consectetur luil adipiscing
                 elit placerat</p>
@@ -694,10 +688,10 @@ data-wf-status="1">
                 <div data-wf-sku-bindings=
                 "%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                 class="card-plan-price">
-                  $ 5.00 USD
+                  N/A
                 </div>
                 <div class="card-plan-price-text">
-                  /once-off
+                  Book A Demo
                 </div>
               </div>
             </div>
