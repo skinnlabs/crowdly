@@ -45,6 +45,36 @@
   a.w-webflow-badge{
    display: none !important;  
   }
+
+.btn_earn_initial_2 {
+  padding: 26px;
+border: 1px solid rgba(229,134,45,1);  
+  color: #1a1a1a;
+  font-weight: bold;
+  // Transition for border
+	@include single-transition(all, 0.5s, ease-in-out, 0s);
+	.gradient{
+		display: block;
+		position: absolute;
+    top: 0;
+		right: 0;
+    width: 100%;
+    height: 800%;		
+		bottom: auto;
+		margin: auto;
+		z-index: -1;    
+		@include riseButtonGradient();
+    @include single-transition(all, 0.5s, ease-in-out, 0s);
+    @include transform(translateY(0%));
+	}
+	&:hover, &:focus{
+		border: 1px solid rgba(114,180,211,1);
+		.gradient{
+      @include transform(translateY(-85%));
+		}
+	}
+}
+
   </style><!--This Loads the Light Theme Style-->
   <link rel="stylesheet" href=
   "https://unpkg.com/tippy.js@4/themes/light.css">
@@ -242,7 +272,7 @@
           "https://assets-global.website-files.com/5f15b50525745912903311ad/5f2cbf44e2204a7d02c39d95_btn-play%201.svg"
           alt="play-icon-crypto"></div>
           <div class="div-block-16">
-            <h2 class="hdw-h2">Discover & Compare</h2>
+            <h2 class="hdw-h2">Explore</h2>
             <div class="hdw-txtblock">
               Learn about top-rated & emerging cryptocurrency platforms
             </div>
@@ -253,7 +283,7 @@
           "https://assets-global.website-files.com/5f15b50525745912903311ad/5f2cbf60578ff5a68de3d0c9_check%20-%20earn%20crypto.svg"
           alt="check-icon-crypto"></div>
           <div class="div-block-16">
-            <h2 class="hdw-h2">Interact & Engage</h2>
+            <h2 class="hdw-h2">Interact</h2>
             <div class="hdw-txtblock">
               Connect with like-minded enthusiasts and experts in the industry
             </div>
@@ -264,7 +294,7 @@
           "https://assets-global.website-files.com/5f15b50525745912903311ad/5f2cbf6da301080f366bb6fc_star%20-%20earn%20crypto.svg"
           alt="star-icon-crypto"></div>
           <div class="div-block-16">
-            <h2 class="hdw-h2">Earn Crypto</h2>
+            <h2 class="hdw-h2">Learn</h2>
             <div class="hdw-txtblock">
               Get rewarded with the crypto and access exclusive offers
             </div>
@@ -454,9 +484,8 @@
                   <p class="project-p-initial">Earn high yields by lending crypto to others or leverage your crypto collateral for loans.</p>
                 </div>
                 <div class="div-block-18">
-                  <a style="background-color:blue;color:black"
-                  href="/sponsored/coinloan" target="_blank" class=
-                  "btn_earn_initial w-inline-block">
+                  <a href="/sponsored/coinloan" target="_blank" class=
+                  "btn_earn_initial_2 w-inline-block">
                   <div class="text-block-10">
                     Learn
                   </div>
