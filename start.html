@@ -89,6 +89,9 @@ box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.75);
   max-width: 2rem;
 }
 
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+}
 
 </style>
 
@@ -104,6 +107,43 @@ box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.75);
 </script>
 
 
+<!--DARK MODE--->
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+
+<script type="text/javascript">
+
+import Darkmode from 'darkmode-js';
+
+new Darkmode().showWidget();
+
+</script>
+
+<script type="text/javascript">
+
+const options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+
+</script>
 
 
 
