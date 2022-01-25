@@ -75,7 +75,14 @@ border: 1px solid rgba(229,134,45,1);
 	}
 }
 
-  </style><!--This Loads the Light Theme Style-->
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+}
+
+  </style>
+
+
+<!--This Loads the Light Theme Style-->
   <link rel="stylesheet" href=
   "https://unpkg.com/tippy.js@4/themes/light.css">
 
@@ -100,7 +107,47 @@ border: 1px solid rgba(229,134,45,1);
   }());
 </script>
 
-<!--ACTIVEHOSTED POPUP-->
+
+<!--DARK MODE--->
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+
+<script type="text/javascript">
+
+import Darkmode from 'darkmode-js';
+
+new Darkmode().showWidget();
+
+</script>
+
+<script type="text/javascript">
+
+const options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+
+</script>
+
+
+<!--ACTIVECAMPAIGN POPUP-->
 
 <script src="https://mykeyfr.activehosted.com/f/embed.php?id=3" type="text/javascript" charset="utf-8"></script>
 
