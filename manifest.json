@@ -3,57 +3,57 @@
   "description": "South Africa's Largest Crypto Trading Community",
   "dir": "ltr",
   "display": "standalone",
-  "name": "MoonClub",
+  "name": "Slottery",
   "orientation": "any",
   "scope": "/",
-  "short_name": "MoonClub",
+  "short_name": "Slottery",
   "start_url": "/login",
   "theme_color": "#ffffff",
   "categories": ["finance", "education"],
   "screenshots": [
     {
-      "src": "https://moonclub.co.za/MoonClub-Icon.png",
+      "src": "https://slottery.co.za/MoonClub-Icon.png",
       "sizes": "1280x800",
       "type": "image/png"
     },
     {
-      "src": "https://moonclub.co.za/screenshot_2.png",
+      "src": "https://slottery.co.za/screenshot_2.png",
       "sizes": "750x1334",
       "type": "image/png"
     }
   ],
   "icons": [
  {
-  "src": "https://moonclub.co.za/E490F7A2-C4DC-48D8-ACF8-5AC38C3E4188.png",
+  "src": "https://slottery.co.za/E490F7A2-C4DC-48D8-ACF8-5AC38C3E4188.png",
   "sizes": "144x144",
   "type": "image/png",
   "purpose": "maskable"
 },    
 
 {
-            "src": "https://moonclub.co.za/E490F7A2-C4DC-48D8-ACF8-5AC38C3E4188.png",
+            "src": "https://slottery.co.za/E490F7A2-C4DC-48D8-ACF8-5AC38C3E4188.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://moonclub.co.za/E490F7A2-C4DC-48D8-ACF8-5AC38C3E4188.png",
+            "src": "https://slottery.co.za/E490F7A2-C4DC-48D8-ACF8-5AC38C3E4188.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "https://moonclub.co.za/E490F7A2-C4DC-48D8-ACF8-5AC38C3E4188.png",
+            "src": "https://slottery.co.za/E490F7A2-C4DC-48D8-ACF8-5AC38C3E4188.png",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "https://moonclub.co.za/E490F7A2-C4DC-48D8-ACF8-5AC38C3E4188.png",
+            "src": "https://slottery.co.za/E490F7A2-C4DC-48D8-ACF8-5AC38C3E4188.png",
             "sizes": "512x512",
             "type": "image/png"
         }
   ],
   "shortcuts": [
 {
-"name": "Exchanges",
+"name": "Featured",
 "description": "Check out the latest market developments.",
 "src": "/exchanges"
 },
