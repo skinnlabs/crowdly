@@ -1,15 +1,15 @@
 {
   "background_color": "#ffffff",
-  "description": "South Africa's Largest Crypto Trading Community",
+  "description": "South Africa's #1 Remote Job Discovery Platform",
   "dir": "ltr",
   "display": "standalone",
-  "name": "Slottery",
+  "name": "Crowdly",
   "orientation": "any",
   "scope": "/",
-  "short_name": "Slottery",
+  "short_name": "Crowdly",
   "start_url": "/login",
   "theme_color": "#ffffff",
-  "categories": ["finance", "education"],
+  "categories": ["finance", "education", "shopping"],
   "screenshots": [
     {
       "src": "https://slottery.co.za/MoonClub-Icon.png",
